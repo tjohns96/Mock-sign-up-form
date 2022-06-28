@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img class='background' src='assets/victoria-shes-UC0HZdUitWY-unsplash.jpg' alt="Delicious food">
+        <div class="logo">
+            <img src="assets/output-onlinepngtools.png" alt="HungerEats hamburger logo">
+            HungerEats
+        </div>
+        <p class="photoCredit">Photo credit: <a href="https://unsplash.com/@victoriakosmo" target="_blank">Victoria
+                Shes</a></p>
+    </div>
+    <div class="signupArea">
+        <div class="headerArea">
+            <h2>Sign up now and start getting delicious and healthy ready-to-cook meals delivered straight to your door!
+                The journey to a better dinner starts right here.</h2>
+            <h2>Get started by entering your info below.</h2>
+        </div>
+        <form action="" method="post" novalidate>
+            <div class="entryArea">
+                <p class="encouragement">Let's do this!</p>
+                <div class="boxArea">
+                    <div class="inputRow">
+                        <div class="inputLabel">
+                            <label for="firstName">FIRST NAME <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="text" name="firstName" id="firstName" minlength="1" maxlength="20" required>
+                        </div>
+                        <div class="inputLabel">
+                            <label for="lastName">LAST NAME <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="text" name="lastName" id="lastName" minlength="1" maxlength="20" required>
+                        </div>
+                    </div>
+                    <div class="inputRow">
+                        <div class="inputLabel">
+                            <label for="email">EMAIL <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="email" name="email" id="email" minlength="6" maxlength="320" required>
+                        </div>
+                        <div class="inputLabel">
+                            <label for="phoneNum">PHONE NUMBER <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="text" name="phoneNum" id="phoneNum" pattern="\d{10}|\d{3}(\.|-)\d{3}(\.|-)\d{4}" required>
+                        </div>
+                    </div>
+                    <div class="inputRow">
+                        <div class="inputLabel">
+                            <label for="password">PASSWORD <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="password" name="password" id="password" minlength="6" maxlength="20" required>
+                        </div>
+                        <div class="inputLabel">
+                            <label for="passwordConfirm">CONFIRM PASSWORD <abbr title="required"><strong>*</strong></abbr></label>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm" minlength="6" maxlength="20" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerArea">
+                <button class="createAcc" type="submit">Create Account</button>
+                <p>Already have an account? <a class="login" href="">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
